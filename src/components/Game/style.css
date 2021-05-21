@@ -1,11 +1,3 @@
-.box {
-  width: 100px;
-  height: 100px;
-  background: gray;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
 div#game {
   display: flex;
   height: 100vh;

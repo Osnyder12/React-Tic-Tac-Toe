@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import "./style.css";
 
-const Box = () => {
+const Box = (props) => {
   const [text, setText] = useState("");
 
   const playerMove = () => {
     if (text === "") {
-      setText("X");
+      setText(props.currentState);
+      props.changeTurn(props.row, props.column);
     }
   };
 
